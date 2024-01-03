@@ -109,15 +109,16 @@ ul{
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 360px;
+    width: 460px;
     cursor: pointer;
 }
-.icon-outlink{
-    margin-left: 4px;
-    width: 8px;
-    height: 8px;
-    background-image: url(../../static/img/icon-outlink.964ab4db.svg);
+.header-family > a {
+    margin-right: 12px;
 }
-.material-symbols-outlined{
-    max-width: 5px;
+.header-family > a > span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
 }
+
+
