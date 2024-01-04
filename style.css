@@ -217,7 +217,7 @@ input::placeholder{
     /*background-color: #acacac;*/
 }
 .faq-list dt:before {
-    content: "Q.";
+    content: "";
     position: absolute;
     top: 34px;
     left: 15px;
