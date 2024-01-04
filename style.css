@@ -7,14 +7,11 @@ html {
 
 }
 body{
-    font-family: "Noto Sans KR";
     word-break: keep-all;
     margin: 0;
-    text-decoration: none;
 }
 li, ol, ul, a{
     list-style: none;
-    /*list-style-image: none;*/
     text-decoration: none;
     color: black;
     margin: 0;
@@ -42,24 +39,30 @@ address{
 }
 .main-wrap {
     width: 100%;
-    min-width: 768px;
     min-height: 100vh;
     margin: 0 auto;
     color: #333;
     letter-spacing: -0.05em;
 }
 
-/* header */
+/*============================== header ============================== */
 
 .header {
     display: flex;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
     justify-content: center;
     align-items: center;
     height: 95px;
     background-color: #ffffff;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+}
+.header.hide {
+    transform: translateY(-100%); /* 헤더를 위로 숨김 */
+    transition: transform 0.2s ease-in-out;
 }
 .header-inner{
     width: 100%;
@@ -124,7 +127,6 @@ address{
 .header-menu >li.active a,
 .header-menu >li a:hover{
     color: coral;
-    /*transition: color 0.15s ease-out;*/
 }
 .header-util{
     display: flex;
@@ -146,14 +148,12 @@ address{
     margin-left: 12px;
 }
 
-/*   header   */
+/*============================== main ==============================*/
 
-/*    main    */
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
-    /*flex: 1 0 auto;*/
 }
 .content-faq{
     position: relative;
@@ -170,7 +170,8 @@ form{
 }
 .faq-search{
     position: relative;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto;
 }
 .invisible{
@@ -213,7 +214,7 @@ input::placeholder{
 }
 .faq-list dl {
     border-bottom: 1px solid #ebebeb;
-    /*background-color: #ececec;*/
+    /*background-color: #acacac;*/
 }
 .faq-list dt:before {
     content: "Q.";
@@ -238,7 +239,7 @@ input::placeholder{
     word-break: break-all;
 }
 
-/*  footer  */
+/*============================== footer ==============================*/
 
 .footer-wrap{
     position: relative;
@@ -293,7 +294,7 @@ input::placeholder{
     top: 22px;
 }
 ion-icon{
-    font-size: 24px;
+    font-size: 1.5rem;
     opacity: 0.5;
 }
 .footer-social ul{

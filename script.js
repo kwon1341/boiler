@@ -13,3 +13,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector('.header');
+    var lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', function () {
+        var currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            // 아래로 스크롤할 때
+            header.classList.add('hide');
+        } else {
+            // 위로 스크롤할 때
+            header.classList.remove('hide');
+        }
+
+        lastScrollY = currentScrollY; // 스크롤 위치 업데이트
+    });
+});
+
