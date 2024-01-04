@@ -1,3 +1,4 @@
+// 클릭 시 active 효과
 document.addEventListener('DOMContentLoaded', function () {
     var menuItems = document.querySelectorAll('.header-menu > li > a');
 
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// sticky header 스크롤 감지 hide 효과
 document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('.header');
     var lastScrollY = window.scrollY;
