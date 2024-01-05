@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    min-width: 596px;
+    min-width: 637px;
     color: #000;
     text-decoration: none;
     font-family: "Noto Sans KR";
@@ -110,7 +110,7 @@ address{
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.4;
 }
@@ -252,6 +252,15 @@ input::placeholder{
     overflow:hidden;
     text-overflow:ellipsis;
 }
+.paging{
+    /*margin: 0 auto;*/
+    margin-top: 85px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
 /*============================== footer ==============================*/
 
@@ -260,11 +269,12 @@ input::placeholder{
     max-width: 1200px;
     margin: 80px auto 0;
 }
+/* 890px 미만 반응형 추가 예정 */
 .footer-util{
     display: flex;
+    justify-content: center;
     align-items: baseline;
     gap: 1rem;
-    height: 160px;
     padding: 22px 0 0;
     font-size: 13px;
     border-top: 1px solid #ebebeb;
@@ -306,9 +316,9 @@ input::placeholder{
     font-weight: 300;
 }
 .footer-social{
-    position: absolute;
-    right: 65px;
-    top: 22px;
+    /*position: absolute;*/
+    /*right: 65px;*/
+    /*top: 22px;*/
 }
 ion-icon{
     font-size: 1.5rem;
